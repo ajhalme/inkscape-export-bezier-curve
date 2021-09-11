@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <_name>Export Bezier Curve</_name>
+  <id>org.fringeling.filter.ExportBezierCurve</id>
+  <dependency type="executable" location="extensions">inkex.py</dependency>
+  <dependency type="executable" location="extensions">ExportBezierCurve.py</dependency>
+  <effect needs-live-preview="false">
+    <object-type>all</object-type>
+    <effects-menu>
+      <submenu _name="Export"/>
+    </effects-menu>				       
+  </effect>
+  <script>
+    <command reldir="extensions" interpreter="python">ExportBezierCurve.py</command>
+  </script>
+</inkscape-extension>
